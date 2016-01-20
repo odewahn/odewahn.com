@@ -1,0 +1,29 @@
+{
+  "name": "odewahn-com-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Andrew Odewahn",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "marked": "^0.3.5",
+    "material-ui": "^0.14.0-rc1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-fontawesome": "^0.3.3",
+    "react-tap-event-plugin": "^0.2.1",
+    "reactify": "^1.1.1",
+    "watchify": "^3.6.1"
+  },
+  "scripts": {
+    "start": "npm run bundle & npm run serve",
+    "bundle": "watchify -o bundle.js -v -d src/main.react.js",
+    "serve": "python -m SimpleHTTPServer"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

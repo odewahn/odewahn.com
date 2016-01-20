@@ -1,105 +1,31 @@
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
+   <head>
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<head>
+   </head>
+   <body>
+     <div id="app"></div>
 
-    <meta charset="utf-8"/>
+     <!-- This script adds the the compiled bundle. -->
+     <script src="bundle.js"></script>
 
-    <title>Andrew Odewahn</title>
-
-   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
-   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
-   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'></link>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link href='assets/html.css' rel='stylesheet' type='text/css'></link>
-
-
-    <script type="text/javascript">
-        $(function() {
-            $("#link-toc").click(function(e) {
-                e.preventDefault();
-                $("#sidebar").toggle();
-            });
-        });
-    </script>
-
-</head>
-
-<body>
-
-    <header>&nbsp;</header>
-
-    <div id="flex-box">
-	
-	    <section id="sidebar">
-            
-
-
-   <div class="toc-element clearfix">
-      <a href="index.html">Home</a>
-   </div>
-
-
-
-   <div class="toc-element clearfix">
-      <a href="about.html">About</a>
-   </div>
-
-
-
-        </section>
-
-        <section id="content">
-            <section id="content-body">
-
-                <h1>Hello, I&#39;m Andrew Odewahn.</h1>
-<p>I&#39;m the CTO of O&#39;Reilly Media, where I founded <a href="http://atlas.oreilly.com">Atlas</a>, our next generation publishing platform.</p>
-<h2>Writing</h2>
-<ul>
-<li><a href="http://odewahn.github.io/docker-jumpstart/">Docker JumpStart</a>.  A quick into to Docker. (2,500+ GitHub Stars)</li>
-<li><a href="http://sites.oreilly.com/odewahn/dds-field-guide/">Distributed Development Stack Field Guide</a>.  A map of the DevOps space.</li>
-<li><a href="https://github.com/odewahn/code-as-media">Patterns of Code as Media</a>.  A look at the various ways people create interactive experiences using code.</li>
-<li><a href="http://www.amazon.com/Beautiful-Visualization-Looking-through-Practice/dp/1449379869">Beautiful Visualization</a>.  Chapter on mapping the senate social graph.</li>
-<li><a href="http://www.amazon.com/Oracle-Web-Applications-Developers-Introduction/dp/1565926870/">Oracle Web Applications</a> and <a href="http://www.amazon.com/Oracle-PL-SQL-Programming-Developers/dp/1565926749">PL/SQL Developer&#39;s Workbook</a>.  A long, long time ago, I used to write about PL/SQL.</li>
-</ul>
-<h2>Presentations and Speaking</h2>
-<ul>
-<li>Harvard-Smithsonian Center for Astrophysics.  July 13, 2015.</li>
-<li><a href="http://opendatascicon.com/schedule/on-demand-analytic-and-learning-environments-with-ipythonjupyter/">Boston Open Data Science Conference</a>.  <a href="http://lambdaops.com/jupyter-environments-odsc2015/">On Demand Analytic and Learning Environments with IPython/Jupyter</a>, May 31, 2015.</li>
-<li>Novartis.  <a href="http://odewahn.github.io/repeatable-workflows-docker-ipython/">Repeatable Workflows with 
-Docker and IPython Notebooks</a>, February 7, 2015.</li>
-<li><a href="http://www.meetup.com/Docker-Boston/events/194894152/">Boston Docker Meetup</a>.  <a href="http://sites.oreilly.com/odewahn/docker-at-oreilly/ch01.html">Docker At O&#39;Reilly</a>,  July 30, 2014.</li>
-</ul>
-<h2>Posts</h2>
-<ul>
-<li><a href="https://beta.oreilly.com/ideas/jupyter-at-oreilly">Embracing Jupyter Notebooks at O&#39;Reilly</a></li>
-</ul>
-<h2>On my Radar</h2>
-<ul>
-<li>Docker</li>
-<li>IPython Notebooks</li>
-<li>Go (in a someday soon kinda way)</li>
-<li>Git / GitHub</li>
-<li>AWS</li>
-</ul>
-<h2>Get in touch</h2>
-<p>I&#39;d love to hear from you</p>
-<p>Email: andrew@odewahn.com<br>
-GitHub: <a href="https://github.com/odewahn">https://github.com/odewahn</a></br>
-Twitter (barely): @odewahn</p>
-
-
-            </section>
-
-        </section>
-
-	
-    </div>
-
-
-
-</body>
-
+     <!-- This script adds the Roboto font to our project. For more detail go to this site:  http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500 -->
+     <script>
+       var WebFontConfig = {
+         google: { families: [ 'Roboto:400,300,500:latin' ] }
+       };
+       (function() {
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+         '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'true';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+       })();
+     </script>
+  </body>
 </html>
