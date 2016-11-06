@@ -1,5 +1,17 @@
 module.exports = [
   {
+    title: "LaunchBot",
+    link: "http://launchbot.io",
+    description: "A desktop tool to make it simple to discover, build, and share complex applications like Jupyter Notebooks.",
+    image:"images/launchbot.png"
+  },
+  {
+    title: "Jupyter Days Boston",
+    link: "https://github.com/odewahn/jdboston16",
+    description: "I co-organized Jupyter Days Boston, a 2-day event with about 120 people held at Harvard Law School.",
+    image:"images/jdb-speakers.png"
+  },
+  {
     title: "OpenStack Tokyo",
     link: "https://getcarina.com/blog/oreilly-carina/",
     description: "My work with Docker containers in code education was featured at OpenStack Summit Tokyo.",

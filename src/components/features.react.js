@@ -68,7 +68,7 @@ module.exports = React.createClass({
             </div>
             <div className="col-sm-5 bioText">
               <p>
-                Hi!  I'm Andrew Odewahn. I'm the current Entrepreneur in Residence and former CTO at <a href="oreilly.com">O'Reilly Media</a>. I'm into developer education, Jupyter, Docker, Go, Carina, and generally lowering the barriers to entry on technology.
+                Hi!  I'm Andrew Odewahn. I'm the CTO of <a href="oreilly.com">O'Reilly Media</a>. I'm into developer education, Jupyter, Docker, Go, React, and lowering the barriers to entry on technology.
               </p>
               <div className="social">
                 <a href="https://github.com/odewahn">
